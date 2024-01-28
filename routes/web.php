@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::controller(PageController::class)->group(function(){
+    route::get('/','BoardBlog')->name('/');
+    route::get('loginUser','LoginUser')->name('loginUser');
+    route::get('RegisterEmail','RegisterEmail')->name('RegisterEmail');
 });
+
+
+
+
