@@ -54,7 +54,8 @@
                                 เข้าสู่ระบบ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <i class="fa-solid fa-user" style="color: #FFD43B;"></i>
+                            <a class="nav-link" href="{{ route('RegisterEmail') }}"> <i class="fa-solid fa-user"
+                                    style="color: #FFD43B;"></i>
                                 สมัครสมาชิก</a>
                         </li>
                     </ul>
