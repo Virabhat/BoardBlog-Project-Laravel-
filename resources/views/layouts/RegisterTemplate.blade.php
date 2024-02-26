@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{-- link font --}}
     <link rel="stylesheet" href="{{ asset('/Font/font.css') }}">
+
+    {{-- link bootstrap --}}
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-grid.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap-reboot.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    {{-- link font-awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
+
+    {{-- link sweetalert  --}}
+    {{-- <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet"> --}}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    {{-- link icon  --}}
     <link rel="shortcut icon"
         href="https://cdn1.iconfinder.com/data/icons/business-e-commerce-logistics-full-colours-set-1/91/Business_E-commerce__Logistics_C-06-256.png"
         type="image/x-icon">
 
     <title>BoardBlog เว็บบอร์ด: เข้าสู่ระบบ </title>
+
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -48,37 +62,27 @@
     @yield('content')
 
 
-
-
     <footer class="bg-body-tertiary text-center  text-lg-start mt-auto">
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
             © 2020 Copyright:
             <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
-    @if (Session::has('message'))
-        <script>
-            swal("Message", "{{ Session::get('message') }}", 'success', {
-                button: true,
-                button: "OK",
-                timer: 3000,
-            });
-        </script>
-    @endif
 
 
+    {{-- link script bootstrap --}}
     <script src="{{ asset('bootstrap/js/bootstrap.js') }}"></script>
     <script src="{{ asset('bootstrap/css/bootstrap.min.css') }}"></script>
     <script src="{{ asset('bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('bootstrap/css/bootstrap-reboot.css') }}"></script>
     <script src="{{ asset('bootstrap/css/bootstrap-grid.css') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
-        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    {{-- link script sweetalert --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert-dev.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script> --}}
 
 </body>
 
