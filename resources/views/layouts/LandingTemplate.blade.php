@@ -54,7 +54,8 @@
                                 เข้าสู่ระบบ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"> <i class="fa-solid fa-user" style="color: #FFD43B;"></i>
+                            <a class="nav-link" href="{{ route('RegisterUser') }}"> <i class="fa-solid fa-user"
+                                    style="color: #FFD43B;"></i>
                                 สมัครสมาชิก</a>
                         </li>
                     </ul>
@@ -74,12 +75,12 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Footer Content</h5>
+                    <h5 class="text-uppercase">
+                        <i class="fa-solid fa-box-open"></i> : BoardBlog
+                    </h5>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-                        voluptatem veniam, est atque cumque eum delectus sint!
+                        กระทู้ ถามตอบ ปัญหา ความรู้ ข้อสงสัย ประสบการ์ณ เรื่องต่างๆ จิปาถะ
                     </p>
                 </div>
                 <!--Grid column-->
