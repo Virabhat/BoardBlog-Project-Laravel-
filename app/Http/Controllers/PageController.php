@@ -16,10 +16,7 @@ class PageController extends Controller
         return view('Login.LoginUser');
     }
 
-    public function RegisterEmail()
-    {
-        return view('Register.registerEmaill');
-    }
+    
 
     public function RegisterUser()
     {
